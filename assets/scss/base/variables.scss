@@ -1,0 +1,54 @@
+:root {
+  // Font Size
+  --font-xxl: 22px;
+  --font-xl: 20px;
+  --font-lg: 18px;
+  --font-base: 16px;
+  --font-sm: 14px;
+
+  // Heading Size
+  --font-h1: 48px;
+  --font-h2: 32px;
+  --font-h3: 28px;
+  --font-h4: 24px;
+  --font-h5: 20px;
+  --font-h6: 16px;
+
+  // Display Size
+  --font-display1: 80px;
+  --font-display2: 72px;
+  --font-display3: 64px;
+  --font-display4: 56px;
+  --font-display5: 48px;
+  --font-display6: 40px;
+
+  // Primary Color
+  --colorPrimary1: #000000; 
+  --colorPrimary2: #FFFFFF;
+
+  // Indication Color
+  --colorIndic1: #00B34A;  // Positive
+  --colorIndic2: #EF2B49;  // Nagative
+  --colorIndic3: #FFC107;  // Warning
+
+  // Greyscale Color
+  --colorGrey1: #F8F9FA; // Background
+  --colorGrey2: #E5E7E8; // Line
+  --colorGrey3: #CDCFD1; // Border-Form
+  --colorGrey4: #ADB0B3;
+  --colorGrey5: #9B9FA3;
+  --colorGrey6: #676D73;
+  --colorGrey7: #52575C; // Text-Body
+  --colorGrey8: #35383B; // Border-Table
+  --colorGrey9: #14171A; // Text-Title
+
+  // Accent Color
+  --colorAccent1: #3577F1; // Blue
+  --colorAccent2: #0033A1; // Indigo
+  --colorAccent3: #552BB6; // Purple
+  --colorAccent4: #CE2F92; // Pink
+  --colorAccent5: #FF7519; // Orange
+  --colorAccent6: #008086; // Teal
+  --colorAccent7: #22BBBB; // Cyan
+  --colorAccent8: #CDEA35; // Lime
+}
