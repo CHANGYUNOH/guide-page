@@ -2,12 +2,11 @@
     <div class="publish-guide">
         <div class="progress-bar" :style="{ width: scrollProgress + '%' }"></div>
         <div class="top">
-            <a href="/guide"><img src="/assets/images/default/img_logo.png" alt="x-coach"></a>
             <p>Design style guide v.1</p>
        </div>
        <nav :class="{ 'is-active' : handleMenu }">
             <button type="button" class="btn-menu" @click="handleMenu = !handleMenu">
-                <img src="/assets/images/icon/icon_list.png" />
+                <img src="/public/images/icon/icon_list.png" />
             </button>
             <dl>
                 <dd v-for="(item, index) in gnbList" :key="index">
@@ -121,130 +120,6 @@
                                 <img :src="`/images/icon/${item.name}.png`" alt="">
                             </li>
                         </ul>
-                        <!-- <ul>
-                            <li @click="iconCopy('icon_check')">
-                                <img src="/assets/images/icon/icon_check.png">
-                            </li>
-                            <li @click="iconCopy('icon_check_fill')">
-                                <img src="/assets/images/icon/icon_check_fill.png">
-                            </li>
-                            <li @click="iconCopy('icon_eye')">
-                                <img src="/assets/images/icon/icon_eye.png">
-                            </li>
-                            <li @click="iconCopy('icon_heart_fill')">
-                                <img src="/assets/images/icon/icon_heart_fill.png">
-                            </li>
-                            <li @click="iconCopy('icon_heart_line')">
-                                <img src="/assets/images/icon/icon_heart_line.png">
-                            </li>
-                            <li @click="iconCopy('icon_comment_fill')">
-                                <img src="/assets/images/icon/icon_comment_fill.png">
-                            </li>
-                            <li @click="iconCopy('icon_comment_line')">
-                                <img src="/assets/images/icon/icon_comment_line.png">
-                            </li>
-                            <li @click="iconCopy('icon_star_fill')">
-                                <img src="/assets/images/icon/icon_star_fill.png">
-                            </li>
-                            <li @click="iconCopy('icon_star_line')">
-                                <img src="/assets/images/icon/icon_star_line.png">
-                            </li>
-                            <li @click="iconCopy('icon_close')">
-                                <img src="/assets/images/icon/icon_close.png">
-                            </li>
-                            <li @click="iconCopy('icon_arrow_down')">
-                                <img src="/assets/images/icon/icon_arrow_down.png">
-                            </li>
-                            <li @click="iconCopy('icon_arrow_up')">
-                                <img src="/assets/images/icon/icon_arrow_up.png">
-                            </li>
-                            <li @click="iconCopy('icon_arrow_prev')">
-                                <img src="/assets/images/icon/icon_arrow_prev.png">
-                            </li>
-                            <li @click="iconCopy('icon_arrow_next')">
-                                <img src="/assets/images/icon/icon_arrow_next.png">
-                            </li>
-                            <li @click="iconCopy('icon_plus')">
-                                <img src="/assets/images/icon/icon_plus.png">
-                            </li>
-                            <li @click="iconCopy('icon_minus')">
-                                <img src="/assets/images/icon/icon_minus.png">
-                            </li>
-                            <li @click="iconCopy('icon_video_camera')">
-                                <img src="/assets/images/icon/icon_video_camera.png">
-                            </li>
-                            <li @click="iconCopy('icon_share')">
-                                <img src="/assets/images/icon/icon_share.png">
-                            </li>
-                            <li @click="iconCopy('icon_calendar')">
-                                <img src="/assets/images/icon/icon_calendar.png">
-                            </li>
-                            <li @click="iconCopy('icon_search')">
-                                <img src="/assets/images/icon/icon_search.png">
-                            </li>
-                        </ul>
-                        <ul>
-                            <li @click="iconCopy('icon_location')">
-                                <img src="/assets/images/icon/icon_location.png">
-                            </li>
-                            <li @click="iconCopy('icon_flag')">
-                                <img src="/assets/images/icon/icon_flag.png">
-                            </li>
-                            <li @click="iconCopy('icon_call')">
-                                <img src="/assets/images/icon/icon_call.png">
-                            </li>
-                            <li @click="iconCopy('icon_my_location')">
-                                <img src="/assets/images/icon/icon_my_location.png">
-                            </li>
-                            <li @click="iconCopy('icon_explore_fill')">
-                                <img src="/assets/images/icon/icon_explore_fill.png">
-                            </li>
-                            <li @click="iconCopy('icon_explore_line')">
-                                <img src="/assets/images/icon/icon_explore_line.png">
-                            </li>
-                            <li @click="iconCopy('icon_information')">
-                                <img src="/assets/images/icon/icon_information.png">
-                            </li>
-                            <li @click="iconCopy('icon_clip')">
-                                <img src="/assets/images/icon/icon_clip.png">
-                            </li>
-                            <li @click="iconCopy('icon_time_fill')">
-                                <img src="/assets/images/icon/icon_time_fill.png">
-                            </li>
-                            <li @click="iconCopy('icon_time_line')">
-                                <img src="/assets/images/icon/icon_time_line.png">
-                            </li>
-                            <li @click="iconCopy('icon_flag_hole')">
-                                <img src="/assets/images/icon/icon_flag_hole.png">
-                            </li>
-                            <li @click="iconCopy('icon_power')">
-                                <img src="/assets/images/icon/icon_power.png">
-                            </li>
-                            <li @click="iconCopy('icon_manage_accounts')">
-                                <img src="/assets/images/icon/icon_manage_accounts.png">
-                            </li>
-                            <li @click="iconCopy('icon_list')">
-                                <img src="/assets/images/icon/icon_list.png">
-                            </li>
-                            <li @click="iconCopy('icon_sort')">
-                                <img src="/assets/images/icon/icon_sort.png">
-                            </li>
-                            <li @click="iconCopy('icon_link')">
-                                <img src="/assets/images/icon/icon_link.png">
-                            </li>
-                            <li @click="iconCopy('icon_sns_youtube')">
-                                <img src="/assets/images/icon/icon_sns_youtube.png">
-                            </li>
-                            <li @click="iconCopy('icon_sns_medium')">
-                                <img src="/assets/images/icon/icon_sns_medium.png">
-                            </li>
-                            <li @click="iconCopy('icon_sns_facebook')">
-                                <img src="/assets/images/icon/icon_sns_facebook.png">
-                            </li>
-                            <li @click="iconCopy('icon_sns_instagram')">
-                                <img src="/assets/images/icon/icon_sns_instagram.png">
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
             </section>
@@ -348,7 +223,7 @@
                                             <i></i>
                                         </span>
                                     </div>
-                                    <img src="/assets/images/icon/icon_arrow_down.png" :class="{ 'is-active' : selectShow }">
+                                    <img src="/public/images/icon/icon_arrow_down.png" :class="{ 'is-active' : selectShow }">
                                     <transition name="slide">
                                         <ul class="select-list" v-if="selectShow" ref="inputContRef">
                                             <li class="select-list-item" v-for="(item, index) in optionList" :key="index">
@@ -681,12 +556,12 @@
                     <div class="pagination-container" style="justify-content: flex-start;">
                         <div class="pagination-container-list">
                             <button type="button" class="paginate-buttons" @click="goToFirstPage" :disabled="currentIndex === 1">
-                                <img src="/assets/images/icon/icon_chevron_left.png" />
+                                <img src="/public/images/icon/icon_chevron_left.png" />
                             </button>
                         </div>
                         <div class="pagination-container-list">
                             <button type="button" class="paginate-buttons" @click="prevPage" :disabled="currentIndex === 1">
-                                <img src="/assets/images/icon/icon_prev.png" />
+                                <img src="/public/images/icon/icon_prev.png" />
                             </button>
                         </div>
                         <div class="pagination-container-wrap">
@@ -699,12 +574,12 @@
                         </div>
                         <div class="pagination-container-list">
                             <button type="button" class="paginate-buttons" @click="nextPage" :disabled="currentIndex === totalPages">
-                                <img src="/assets/images/icon/icon_next.png" />
+                                <img src="/public/images/icon/icon_next.png" />
                             </button>
                         </div>
                         <div class="pagination-container-list">
                             <button type="button" class="paginate-buttons" @click="goToLastPage" :disabled="currentIndex === totalPages">
-                                <img src="/assets/images/icon/icon_chevron_right.png" />
+                                <img src="/public/images/icon/icon_chevron_right.png" />
                             </button>
                         </div>
                     </div>
@@ -1136,7 +1011,7 @@ const iconCopy = (value) => {
     const copyText = value;
     const copyArea = document.createElement('textarea');
 
-    copyArea.value = `<img src="/images/icons/${copyText}.png">`;
+    copyArea.value = `<img src="/public/images/icons/${copyText}.png">`;
     document.body.appendChild(copyArea);
     copyArea.select();
     document.execCommand('copy');

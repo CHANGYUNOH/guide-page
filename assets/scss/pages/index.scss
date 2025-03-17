@@ -38,7 +38,7 @@
 
     nav {
         position: fixed;
-        top: 150px;
+        top: 125px;
         left: 0;
         width: 200px;
         height: calc(100vh - 60px);
@@ -52,7 +52,7 @@
             left: -150px;
 
             & + main {
-                margin: 150px 0 0 50px;
+                margin: 125px 0 0 50px;
             }
         }
 
@@ -132,7 +132,7 @@
     }
 
     main {
-        margin: 150px 0 0 200px;
+        margin: 125px 0 0 200px;
         padding: 50px;
         transition: all ease .2s;
 

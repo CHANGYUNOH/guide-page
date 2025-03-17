@@ -1,103 +1,103 @@
 /* reset */
 html, body {
-    height: 100%;
-    font-family: "Pretendard", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: -0.025em;
+  height: 100%;
+  font-family: "Pretendard", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.025em;
 
-    &.is-hidden {
-      overflow: hidden;
-    }
+  &.is-hidden {
+    overflow: hidden;
   }
-  
-  * {
-    margin: 0;
-    padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:after, &:before {
     box-sizing: border-box;
-  
-    &:after, &:before {
-      box-sizing: border-box;
-    }
-  
-    &:focus {
-      outline: 0;
-    }
-  }
-  
-  ol, ul, li {
-    list-style: none;
-  }
-  
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  img {
-    pointer-events: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  
-    &:focus, &:focus-visible, &:active, &:hover {
-      outline: 0;
-    }
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 1em;
   }
 
-  h1 {
-    font-size: 48px;
+  &:focus {
+    outline: 0;
   }
+}
 
-  h2 {
-    font-size: 32px;
-  }
+ol, ul, li {
+  list-style: none;
+}
 
-  h3 {
-    font-size: 28px;
-  }
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
 
-  h4 {
-    font-size: 24px;
-  }
+img {
+  pointer-events: none;
+}
 
-  h5 {
-    font-size: 20px;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
 
-  h6 {
-    font-size: 16px;
+  &:focus, &:focus-visible, &:active, &:hover {
+    outline: 0;
   }
-  
-  button, input, select, textarea {
-    font: inherit;
-    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  caption {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-  
-    caption {
-      border: 0;
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-      clip: rect(1px 1px 1px 1px);
-      clip: rect(1px, 1px, 1px, 1px);
-      clip-path: inset(50%);
-      white-space: nowrap;
-    }
-  }
+}
